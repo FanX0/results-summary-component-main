@@ -1,6 +1,6 @@
 const RootLayout = ({ children }) => {
   return (
-    <div className="flex lg:justify-center lg:items-center lg:min-h-screen ">
+    <div className="flex lg:justify-center lg:items-center lg:min-h-screen bg-Pale-blue">
       {children}
     </div>
   );
