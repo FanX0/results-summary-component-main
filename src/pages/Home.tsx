@@ -9,7 +9,9 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("data/data.json");
+        const res = await fetch("data/data.json", {
+           cache: "no-store"
+         });
         const data = await res.json();
         setData(data);
       } catch (e) {
