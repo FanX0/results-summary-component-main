@@ -14,7 +14,7 @@ const CardList = ({ data, className }: CardListProps) => {
   };
 
   return (
-    <div className={`flex flex-col gap-[1.5rem] lg:gap-[2rem] ${className ?? ""}`}>
+    <div className={`flex flex-col gap-[1.5rem] lg:gap-[1rem] ${className ?? ""}`}>
       {data.map((d) => {
         const c = COLOR[d.category] ?? { text: "text-black", bg: "bg-transparent" };
         return (
